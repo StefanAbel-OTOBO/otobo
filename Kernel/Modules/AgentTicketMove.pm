@@ -1064,6 +1064,7 @@ sub Run {
         $BodyAsText = $GetParam{Body} || 0;
     }
     my $Move = $TicketObject->TicketQueueSet(
+        Action             => "AgentTicketMove",
         QueueID            => $GetParam{DestQueueID},
         UserID             => $Self->{UserID},
         TicketID           => $Self->{TicketID},

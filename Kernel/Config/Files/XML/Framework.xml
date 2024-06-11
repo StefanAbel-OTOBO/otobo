@@ -7434,7 +7434,7 @@ via the Preferences button after logging in.
                 <Item Key="Module">Kernel::Output::HTML::CustomerDashboard::TileTicketList</Item>
                 <Item Key="Config">
                     <Hash>
-                        <Item Key="Text">Your last tickets</Item>
+                        <Item Key="Text">Your latest tickets</Item>
                         <Item Key="SortBy">Age</Item>
                         <Item Key="OrderBy">Down</Item>
                         <Item Key="StateType"></Item>

@@ -629,7 +629,7 @@ sub LoadDefaults {
 
     # --------------------------------------------------- #
     # authentication sync settings                        #
-    # (enable agent data sync. after succsessful          #
+    # (enable agent data sync. after successful           #
     # authentication)                                     #
     # --------------------------------------------------- #
     # This is an example configuration for an LDAP auth sync. backend.
@@ -1580,20 +1580,18 @@ via the Preferences button after logging in.
 #    $Self->{'Customer::AuthModule::Radius::Host'} = 'radiushost';
 #    $Self->{'Customer::AuthModule::Radius::Password'} = 'radiussecret';
 
-    # --------------------------------------------------- #
-    # 2 factor customer authentication settings           #
-    # check a otp (one-time password)                     #
-    # after successful authentication                     #
-    # as an extra security measure                        #
-    #                                                     #
-    # if customers should be able to change their own     #
-    # secret you need to enable it in the system          #
-    # configuration (go to                                #
-    # frontend->customer->view->preferences and set       #
-    # active to 1 in                                      #
+    # --------------------------------------------------------- #
+    # 2 factor customer authentication settings                 #
+    # check a otp (one-time password) after successful          #
+    # authentication as an extra security measure               #
+    #                                                           #
+    # if customers should be able to change their own secret    #
+    # you need to enable it in the system configuration (Go to  #
+    # frontend -> customer-> view -> preferences                #
+    # and set active to 1 in                                    #
     # CustomerPreferencesGroups###GoogleAuthenticatorSecretKey) #
-    # --------------------------------------------------- #
-    # --------------------------------------------------- #
+    # --------------------------------------------------------- #
+    
     # This is the auth module using the google authenticator mechanism
 #    $Self->{'Customer::AuthTwoFactorModule'} = 'Kernel::System::CustomerAuth::TwoFactor::GoogleAuthenticator';
 

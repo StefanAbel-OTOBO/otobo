@@ -68,7 +68,7 @@ code_policy:
     - cd /opt/codepolicy
     - git checkout $OTOBO_POLICE
     - cd $CI_PROJECT_DIR
-    - git fetch
+#    - git fetch
     - git checkout $OTOBO_BASE
     - git checkout $CI_COMMIT_REF_NAME
 
@@ -85,7 +85,7 @@ code_policy:
     - 'echo "CHECK: $OTOBO_CHECK"'
 
     # call the police now
-    - perl -I ../codepolicy -I ../codepolicy/Kernel/cpan-lib ../codepolicy/bin/otobo.CodePolicy.pl ${OTOBO_CHECK} 
+    - perl -I /opt/codepolicy -I /opt/codepolicy/Kernel/cpan-lib /opt/codepolicy/bin/otobo.CodePolicy.pl ${OTOBO_CHECK} 
 
     # mark job as failed if we did tidy
     - DID_TIDY=$(git diff | wc -l)

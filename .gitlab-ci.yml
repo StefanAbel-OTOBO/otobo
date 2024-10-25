@@ -69,7 +69,8 @@ code_policy:
     - git checkout $OTOBO_POLICE
     - cd $CI_PROJECT_DIR
     - git fetch
-    - git branch --all
+    - git checkout $OTOBO_BASE
+    - git checkout $CI_COMMIT_REF_NAME
 
     # if there were no explicit args to OTOBO_CHECK, determine defaults
 

@@ -74,15 +74,15 @@ use warnings;
 use utf8;
 
 use File::Basename qw(dirname);
-use FindBin        qw($RealBin);
+use FindBin qw($RealBin);
 use lib dirname($RealBin);
 use lib dirname($RealBin) . '/Kernel/cpan-lib';
 use lib dirname($RealBin) . '/Custom';
 
 # core modules
-use Getopt::Long                   qw(GetOptions);
-use Term::ANSIColor                qw(color);
-use Pod::Usage                     qw(pod2usage);
+use Getopt::Long qw(GetOptions);
+use Term::ANSIColor qw(color);
+use Pod::Usage qw(pod2usage);
 use Module::Metadata 1.000031      ();
 use CPAN::Meta::Requirements 2.140 ();
 use Term::ReadLine;    # avoids error when checking for Term::ReadLine::Gnu
@@ -90,7 +90,7 @@ use Term::ReadLine;    # avoids error when checking for Term::ReadLine::Gnu
 # CPAN modules
 
 # OTOBO modules
-use Kernel::System::Environment   ();
+use Kernel::System::Environment ();
 use Kernel::System::VariableCheck qw(IsHashRefWithData IsArrayRefWithData);
 
 my %InstTypeToCMD = (

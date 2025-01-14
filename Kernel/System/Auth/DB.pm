@@ -104,7 +104,7 @@ sub Auth {
     my $RemoteAddr  = $ParamObject->RemoteAddr() || 'Got no REMOTE_ADDR env!';
     my $UserID      = '';
     my $GetPw       = '';
-    my $Method     = '';
+    my $Method      = '';
 
     # get database object
     my $DBObject = $Kernel::OM->Get('Kernel::System::DB');

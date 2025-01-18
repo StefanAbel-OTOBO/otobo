@@ -202,7 +202,7 @@ requires 'Plack::Middleware::ReverseProxy';
 # };
 
 # feature 'div:cldr', 'Support for feature div:cldr' => sub {
-    # localisation from the CLDR project
+    # localisation from the CLDR project, TODO: upgrade to 0.46.0
     requires 'Locale::CLDR', '== 0.44.1';
 
     # language packs from the CLDR project
